@@ -1,0 +1,42 @@
+.paragraph--type--inset {
+  margin: $spacing * 2 0;
+
+  .group-right {
+    background-color: $color-secondary;
+    padding: $spacing;
+    border-radius: 0 0 $spacing $spacing;
+  }
+
+  @media (min-width: $bp-tablet) {
+    display: flex;
+
+    .group-left {
+      width: 50%;
+    }
+
+    .group-right {
+      width: 50%;
+      border-radius: 0 $spacing $spacing 0;
+    }
+
+    .field--name-field-image {
+      display: flex;
+      height: 100%;
+
+      img {
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  @media (min-width: $bp-desktop) {
+    .group-left {
+      width: 40%;
+    }
+
+    .group-right {
+      width: 60%;
+    }
+  }
+}

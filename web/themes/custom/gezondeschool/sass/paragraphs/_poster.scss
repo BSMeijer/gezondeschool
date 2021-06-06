@@ -1,0 +1,53 @@
+.paragraph--type-poster {
+  .field-group-background-image {
+    padding: $spacing;
+
+    @media (min-width: $bp-desktop) {
+      position: relative;
+      padding-top: 56.25%;
+    }
+
+    .text-wrapper {
+      background-color: rgba($white, .8);
+      padding: $spacing;
+
+      @media (min-width: $bp-desktop) {
+        position: absolute;
+        bottom: $spacing;
+        left: $spacing;
+        width: 50%;
+      }
+    }
+  }
+
+  .field--name-field-links {
+    background-color: $color-primary;
+    padding: $spacing;
+
+    a {
+      color: $white;
+      display: inline-block;
+      font-size: 1.125rem;
+      margin: $spacing / 4 0;
+
+      &:hover {
+        border-bottom-color: $white;
+      }
+    }
+
+    @media (min-width: $bp-desktop) {
+      display: flex;
+      flex-wrap: wrap;
+
+      .field__item {
+        padding-right: $spacing;
+        width: 33.333%;
+
+        &:not(:first-child) {
+          border-left: 1px solid $white;
+          padding-left: $spacing;
+        }
+      }
+    }
+  }
+}

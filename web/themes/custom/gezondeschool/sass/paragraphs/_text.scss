@@ -1,0 +1,16 @@
+.paragraph--type--text {
+  max-width: $bp-tablet;
+  margin: 0 auto $spacing;
+
+  p {
+    margin-bottom: $spacing;
+  }
+
+  .field--name-field-image {
+    margin: 0 (-$spacing) $spacing;
+
+    @media (min-width: $bp-desktop) {
+      margin: 0 (-$spacing * 3) $spacing * 2;
+    }
+  }
+}

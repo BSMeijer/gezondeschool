@@ -1,0 +1,28 @@
+.view-recent-news {
+  margin-bottom: $spacing * 2;
+
+  &.view-display-id-page_1 {
+    .views-row {
+      margin-bottom: $spacing;
+    }
+  }
+
+  &.view-display-id-block_1 {
+    .view-content {
+      @media (min-width: $bp-tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 (-$spacing / 2) $spacing;
+      }
+
+      .views-row {
+        margin-bottom: $spacing;
+
+        @media (min-width: $bp-tablet) {
+          padding: 0 $spacing / 2;
+          width: 50%;
+        }
+      }
+    }
+  }
+}

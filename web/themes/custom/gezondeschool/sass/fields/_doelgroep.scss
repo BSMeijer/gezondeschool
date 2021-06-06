@@ -1,0 +1,10 @@
+  .field--name-field-doelgroep a {
+    color: $color-primary;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &:hover {
+      border-bottom-color: $color-primary;
+    }
+  }

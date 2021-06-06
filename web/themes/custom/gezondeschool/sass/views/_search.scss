@@ -1,0 +1,33 @@
+.view-id-search {
+  .views-row {
+    display: flex;
+    margin-bottom: $spacing;
+
+    .views-field-field-header-image {
+      display: none;
+
+      @media (min-width: $bp-tablet) {
+        display: block;
+        flex-shrink: 0;
+        width: 25%;
+        margin-right: $spacing;
+      }
+    }
+
+    .search-content {
+      flex-grow: 1;
+    }
+
+    .doelgroep {
+      color: $color-primary;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    h2 a {
+      color: $base-color;
+      font-size: $base-font-size * 1.125;
+    }
+  }
+}

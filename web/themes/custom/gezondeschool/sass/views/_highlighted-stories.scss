@@ -1,0 +1,24 @@
+.view-highlighted-stories {
+  .view-content {
+    width: 100%;
+
+    @media (min-width: $bp-tablet) {
+      margin: 0 (-$spacing / 2) $spacing * 2;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .views-row {
+    padding-bottom: $spacing * 2;
+
+    @media (min-width: $bp-tablet) {
+      padding: 0 $spacing / 2 $spacing * 2;
+      width: 50%;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 33.333%;
+    }
+  }
+}

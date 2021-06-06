@@ -1,0 +1,24 @@
+.view-taxonomy-term {
+  margin-bottom: $spacing * 2;
+
+  .view-content {
+    @media (min-width: $bp-tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 (-$spacing / 2) 0;
+    }
+  }
+
+  .views-row {
+    margin-bottom: $spacing * 2;
+
+    @media (min-width: $bp-tablet) {
+      padding: 0 $spacing / 2;
+      width: 50%;
+    }
+
+    @media (min-width: $bp-desktop) {
+      width: 33.333%;
+    }
+  }
+}
