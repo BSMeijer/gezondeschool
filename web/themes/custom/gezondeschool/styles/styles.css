@@ -182,6 +182,13 @@ img {
   background: #a90061;
 }
 
+/* line 1, ../sass/base/_forms.scss */
+input[type=text],
+input[type=password] {
+  max-width: 100%;
+  padding: 0.5rem;
+}
+
 /* line 1, ../sass/layout/_layout.scss */
 .region-content,
 .region-footer {
