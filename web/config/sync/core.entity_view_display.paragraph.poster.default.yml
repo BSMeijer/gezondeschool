@@ -1,0 +1,103 @@
+uuid: b685bcb5-7ff9-444e-bf29-db3fd80c8b74
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.poster.field_image
+    - field.field.paragraph.poster.field_links
+    - field.field.paragraph.poster.field_text
+    - field.field.paragraph.poster.field_title
+    - paragraphs.paragraphs_type.poster
+  module:
+    - ds
+    - field_group
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_achtergrond
+        - field_links
+        - group_text_block
+        - field_title
+        - field_text
+  field_group:
+    group_achtergrond:
+      children:
+        - group_text_block
+      parent_name: ''
+      weight: 0
+      format_type: background_image
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: ''
+        image: field_image
+        image_style: hd
+        hide_if_missing: false
+      label: Achtergrond
+    group_text_block:
+      children:
+        - field_title
+        - field_text
+      parent_name: group_achtergrond
+      weight: 20
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: text-wrapper
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Text block'
+id: paragraph.poster.default
+targetEntityType: paragraph
+bundle: poster
+mode: default
+content:
+  field_links:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_text:
+    weight: 22
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_title:
+    weight: 21
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden:
+  field_image: true
+  search_api_excerpt: true

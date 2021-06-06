@@ -1,0 +1,29 @@
+uuid: 1753eb60-62d4-41f4-9584-2d1c1019ec46
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.story
+  module:
+    - entity_reference_revisions
+id: node.story.field_body
+field_name: field_body
+entity_type: node
+bundle: story
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      text:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

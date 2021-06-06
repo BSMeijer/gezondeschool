@@ -1,0 +1,10 @@
+uuid: b9bc344b-85ed-466a-b59b-0f0efbc5f832
+langcode: nl
+status: true
+dependencies: {  }
+id: stories
+label: Verhalen
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

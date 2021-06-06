@@ -1,0 +1,30 @@
+uuid: 74e3107b-a827-4d94-90aa-660c468fa61d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landingspagina.field_body
+    - field.field.node.landingspagina.field_doelgroep
+    - field.field.node.landingspagina.field_header_image
+    - field.field.node.landingspagina.field_intro
+    - node.type.landingspagina
+  module:
+    - user
+id: node.landingspagina.teaser
+targetEntityType: node
+bundle: landingspagina
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_body: true
+  field_doelgroep: true
+  field_header_image: true
+  field_intro: true
+  langcode: true
+  search_api_excerpt: true

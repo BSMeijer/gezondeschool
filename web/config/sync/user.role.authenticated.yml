@@ -1,0 +1,13 @@
+uuid: 84105c19-6aad-4e3f-a35b-186b0a79fe61
+langcode: nl
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Geverifieerde gebruiker'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format html'

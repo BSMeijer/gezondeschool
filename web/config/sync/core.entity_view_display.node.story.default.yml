@@ -1,0 +1,179 @@
+uuid: f7862ff0-e271-435e-aab0-9d6fee69fd26
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.story.field_body
+    - field.field.node.story.field_doelgroep
+    - field.field.node.story.field_from
+    - field.field.node.story.field_header_image
+    - field.field.node.story.field_intro
+    - field.field.node.story.field_reading_time
+    - node.type.story
+  module:
+    - ds
+    - entity_reference_revisions
+    - field_group
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_header
+        - field_intro
+        - field_body
+        - group_information
+        - field_reading_time
+        - field_doelgroep
+        - field_from
+        - node_title
+        - group_shadow
+        - group_meta
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: ''
+          link: false
+  field_group:
+    group_header:
+      children:
+        - group_shadow
+        - group_meta
+      parent_name: ''
+      weight: 0
+      format_type: background_image
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: header-image
+        image: field_header_image
+        image_style: ''
+        hide_if_missing: false
+      label: Header
+    group_shadow:
+      children:
+        - group_information
+      parent_name: group_header
+      weight: 7
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: header-shadow
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Shadow
+    group_information:
+      children:
+        - field_doelgroep
+        - node_title
+      parent_name: group_shadow
+      weight: 2
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: header-information
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Information
+    group_meta:
+      children:
+        - field_reading_time
+        - field_from
+      parent_name: group_header
+      weight: 8
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: header-meta
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Meta
+id: node.story.default
+targetEntityType: node
+bundle: story
+mode: default
+content:
+  field_body:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: ds_content
+  field_doelgroep:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_from:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+  field_intro:
+    weight: 1
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+  field_reading_time:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: ds_content
+hidden:
+  field_header_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

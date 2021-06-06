@@ -1,0 +1,10 @@
+uuid: bc1ba1a3-de19-4eb8-9b91-f9bbe9baf418
+langcode: nl
+status: true
+dependencies: {  }
+id: poster
+label: Poster
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

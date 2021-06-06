@@ -1,0 +1,25 @@
+uuid: 55d7f3b8-a7f5-4054-bf88-5d59b7671022
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gezondeschool
+id: pagetitle
+theme: gezondeschool
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/verhalen\r\n/nieuws\r\n/zoeken"
+    negate: false
+    context_mapping: {  }

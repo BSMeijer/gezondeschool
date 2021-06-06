@@ -1,0 +1,56 @@
+uuid: 91227890-27e9-43db-81de-b84ddafbf092
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.poster.field_image
+    - field.field.paragraph.poster.field_links
+    - field.field.paragraph.poster.field_text
+    - field.field.paragraph.poster.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.poster
+  module:
+    - image
+    - text
+id: paragraph.poster.default
+targetEntityType: paragraph
+bundle: poster
+mode: default
+content:
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_links:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

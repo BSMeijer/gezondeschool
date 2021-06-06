@@ -1,0 +1,10 @@
+uuid: 356f5f92-43e8-4d98-bd54-6e59fed5295e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.taxonomy
+label: Taxonomy
+targetEntityType: node
+cache: true

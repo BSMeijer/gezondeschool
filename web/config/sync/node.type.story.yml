@@ -1,0 +1,18 @@
+uuid: 94b10bf3-19a7-4c95-a287-a4f9ff23ccfa
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Verhaal
+type: story
+description: 'Een <em>Verhaal</em> is van een bepaald persoon en wordt in het verhalen overzicht getoond.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

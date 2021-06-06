@@ -1,0 +1,19 @@
+uuid: 6c455869-8b61-4fa7-8731-ce78c75b7f12
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.poster
+id: paragraph.poster.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: poster
+label: Titel
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: dfb3c1aa-a83b-46c3-a530-d1f830c5a236
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - gezondeschool
+_core:
+  default_config_hash: c-06bbElRY5sKmglk74ppgTW93Et4-EJFyNiUZMb8JY
+id: gezondeschool_local_tasks
+theme: gezondeschool
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabbladen
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

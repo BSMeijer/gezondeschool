@@ -1,0 +1,52 @@
+uuid: 1b3a83b1-b3e1-41a2-af26-25d0549d4614
+langcode: nl
+status: true
+dependencies:
+  module:
+    - better_social_sharing_buttons
+    - node
+  theme:
+    - gezondeschool
+id: bettersocialsharingbuttons
+theme: gezondeschool
+region: content
+weight: 1
+provider: null
+plugin: social_sharing_buttons_block
+settings:
+  id: social_sharing_buttons_block
+  label: 'Deel dit op sociale media'
+  provider: better_social_sharing_buttons
+  label_display: visible
+  services:
+    facebook: facebook
+    twitter: twitter
+    whatsapp: whatsapp
+    email: email
+    facebook_messenger: 0
+    pinterest: 0
+    linkedin: 0
+    digg: 0
+    stumbleupon: 0
+    slashdot: 0
+    tumblr: 0
+    reddit: 0
+    evernote: 0
+    print: 0
+    copy: 0
+  iconset: social-icons--no-color
+  facebook_app_id: ''
+  print_css: ''
+  width: 40px
+  radius: 0px
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      landingspagina: landingspagina
+      news: news
+      page: page
+      story: story
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

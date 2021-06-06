@@ -1,0 +1,34 @@
+uuid: b684863c-e3a7-4c9d-a648-c6b6b98b045e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_links
+    - node.type.landingspagina
+    - node.type.news
+    - node.type.page
+    - node.type.story
+    - paragraphs.paragraphs_type.poster
+id: paragraph.poster.field_links
+field_name: field_links
+entity_type: paragraph
+bundle: poster
+label: Links
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+      landingspagina: landingspagina
+      news: news
+      story: story
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: page
+field_type: entity_reference

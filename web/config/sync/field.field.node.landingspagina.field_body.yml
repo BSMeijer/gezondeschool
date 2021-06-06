@@ -1,0 +1,44 @@
+uuid: 51e5f1fc-e9c1-4f96-8c50-d8c814dd5634
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.landingspagina
+  module:
+    - entity_reference_revisions
+id: node.landingspagina.field_body
+field_name: field_body
+entity_type: node
+bundle: landingspagina
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles: null
+    target_bundles_drag_drop:
+      highlighted_stories:
+        weight: 7
+        enabled: false
+      inset:
+        weight: 8
+        enabled: false
+      poster:
+        weight: 6
+        enabled: false
+      stories:
+        weight: 9
+        enabled: false
+      text:
+        weight: 10
+        enabled: false
+      video:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

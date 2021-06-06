@@ -1,0 +1,14 @@
+uuid: eb8807a8-ec70-451b-ad2b-fc19bd8698b9
+name: 'Gezonde school'
+mail: gezondeschool@localhost
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: nl
+default_langcode: nl
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

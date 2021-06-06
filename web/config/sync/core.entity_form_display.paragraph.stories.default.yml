@@ -1,0 +1,34 @@
+uuid: 2bacaa51-abf8-45b8-8c34-d208e794bfc9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stories.field_stories
+    - field.field.paragraph.stories.field_title
+    - paragraphs.paragraphs_type.stories
+id: paragraph.stories.default
+targetEntityType: paragraph
+bundle: stories
+mode: default
+content:
+  field_stories:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

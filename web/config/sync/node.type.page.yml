@@ -1,0 +1,18 @@
+uuid: 936bdc3d-1daa-436b-9e95-99dd873d47b2
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Basis pagina'
+type: page
+description: 'De <em>Basis-pagina</em> zijn de ''kale'' pagina''s van de site.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

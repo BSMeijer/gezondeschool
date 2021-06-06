@@ -1,0 +1,25 @@
+uuid: b61f76c7-a9b8-4f28-9701-278d1a0c4c6a
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: highlighted_stories
+label: 'Uitgelichte verhalen'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      story: story
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

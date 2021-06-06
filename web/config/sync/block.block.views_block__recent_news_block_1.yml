@@ -1,0 +1,30 @@
+uuid: 9597c553-a62f-4d4c-b673-3ed16f7c1bd1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.recent_news
+  module:
+    - system
+    - views
+  theme:
+    - gezondeschool
+id: views_block__recent_news_block_1
+theme: gezondeschool
+region: content
+weight: 2
+provider: null
+plugin: 'views_block:recent_news-block_1'
+settings:
+  id: 'views_block:recent_news-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/search\r\n/zoeken\r\n/nieuws"
+    negate: true
+    context_mapping: {  }

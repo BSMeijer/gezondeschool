@@ -1,0 +1,30 @@
+uuid: 1a52a71c-e614-4f58-87ad-9ef88ae2d674
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.highlighted_stories
+  module:
+    - system
+    - views
+  theme:
+    - gezondeschool
+id: views_block__highlighted_stories_block_1
+theme: gezondeschool
+region: content
+weight: 3
+provider: null
+plugin: 'views_block:highlighted_stories-block_1'
+settings:
+  id: 'views_block:highlighted_stories-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /zoeken
+    negate: true
+    context_mapping: {  }

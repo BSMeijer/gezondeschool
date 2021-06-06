@@ -1,0 +1,146 @@
+uuid: 796d0298-7f7d-4f1f-994b-83452102f3bf
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_intro
+    - field.storage.node.field_doelgroep
+    - field.storage.node.field_body
+    - field.storage.paragraph.field_text
+    - search_api.server.database
+    - core.entity_view_mode.node.full
+  module:
+    - taxonomy
+    - paragraphs
+    - node
+    - search_api
+id: content
+name: Content
+description: ''
+read_only: false
+field_settings:
+  field_intro:
+    label: Intro
+    datasource_id: 'entity:node'
+    property_path: field_intro
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_intro
+  name:
+    label: 'Doelgroep » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_doelgroep:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_doelgroep
+      module:
+        - taxonomy
+  processed:
+    label: 'Body » Paragraaf » Tekst » Tekst verwerkt'
+    datasource_id: 'entity:node'
+    property_path: 'field_body:entity:field_text:processed'
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.field_body
+        - field.storage.paragraph.field_text
+      module:
+        - paragraphs
+  rendered_item:
+    label: 'Rendered HTML output'
+    property_path: rendered_item
+    type: text
+    configuration:
+      roles:
+        anonymous: anonymous
+      view_mode:
+        'entity:node':
+          news: full
+          page: full
+          story: full
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  highlight:
+    highlight: always
+    highlight_partial: true
+    excerpt: true
+    excerpt_length: 256
+    exclude_fields:
+      - field_intro
+      - processed
+      - rendered_item
+    prefix: '<strong>'
+    suffix: '</strong>'
+    weights:
+      postprocess_query: 0
+  html_filter:
+    all_fields: true
+    fields:
+      - field_intro
+      - name
+      - processed
+      - rendered_item
+      - title
+    title: true
+    alt: true
+    tags:
+      b: 2
+      em: 1
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+      u: 1
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: true
+    fields:
+      - field_intro
+      - name
+      - processed
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+  transliteration:
+    all_fields: true
+    fields:
+      - field_intro
+      - name
+      - processed
+      - rendered_item
+      - title
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: database

@@ -1,0 +1,21 @@
+uuid: 06ba23c6-f5b2-4f83-a74e-45ec7ceb1123
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reading_time
+    - node.type.story
+id: node.story.field_reading_time
+field_name: field_reading_time
+entity_type: node
+bundle: story
+label: Leestijd
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '15 minuten'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,9 @@
+uuid: 474b1af4-f4b1-46cb-b0a5-db013b2d8490
+langcode: nl
+status: true
+dependencies: {  }
+id: nl
+label: Dutch
+direction: ltr
+weight: 0
+locked: false

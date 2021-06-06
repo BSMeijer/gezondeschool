@@ -1,0 +1,20 @@
+uuid: 2770969b-f0bd-4a77-829e-1bdcd3958799
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gezondeschool
+id: berichten
+theme: gezondeschool
+region: content
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Berichten
+  provider: system
+  label_display: '0'
+visibility: {  }

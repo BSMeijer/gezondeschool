@@ -1,0 +1,24 @@
+uuid: 607607c3-720a-49bd-931f-4033a9f230b1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - search_api.index.content
+    - views.view.search
+  module:
+    - views
+    - search_api_autocomplete
+id: search
+label: Zoeken
+index_id: content
+suggester_settings:
+  server:
+    fields: {  }
+suggester_weights: {  }
+suggester_limits: {  }
+search_settings:
+  'views:search':
+    displays:
+      default: true
+      selected: {  }
+options: {  }

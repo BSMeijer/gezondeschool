@@ -1,0 +1,29 @@
+uuid: b63b78ca-e9ae-46e9-938a-32aa550d8089
+langcode: nl
+status: true
+dependencies:
+  config:
+    - facets.facet.doelgroep
+  module:
+    - facets
+    - system
+  theme:
+    - gezondeschool
+id: doelgroep
+theme: gezondeschool
+region: content
+weight: -1
+provider: null
+plugin: 'facet_block:doelgroep'
+settings:
+  id: 'facet_block:doelgroep'
+  label: Doelgroep
+  provider: facets
+  label_display: '0'
+  block_id: doelgroep
+visibility:
+  request_path:
+    id: request_path
+    pages: /zoeken
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,12 @@
+uuid: 54a311fe-7c49-415a-b3b1-740035f34cee
+langcode: nl
+status: true
+dependencies: {  }
+id: '2_3'
+label: 2-3
+description: ''
+aspect_ratio: '2:3'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

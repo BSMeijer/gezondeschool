@@ -1,0 +1,10 @@
+uuid: b9a0d8b8-9de4-4336-bb63-fa630e77932e
+langcode: nl
+status: true
+dependencies: {  }
+id: inset
+label: Inset
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

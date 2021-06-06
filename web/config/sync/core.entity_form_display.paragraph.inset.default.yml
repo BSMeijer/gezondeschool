@@ -1,0 +1,36 @@
+uuid: 9090dee6-9000-452f-9115-05aaeaf544df
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.inset.field_image
+    - field.field.paragraph.inset.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.inset
+  module:
+    - image
+    - text
+id: paragraph.inset.default
+targetEntityType: paragraph
+bundle: inset
+mode: default
+content:
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

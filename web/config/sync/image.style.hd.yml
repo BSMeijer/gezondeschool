@@ -1,0 +1,17 @@
+uuid: 10f097d0-06d9-4b17-bcd2-30ababd59ac2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - crop.type.16_9
+  module:
+    - crop
+name: hd
+label: HD
+effects:
+  5a6ff0d5-db45-4039-81a1-8b85786a3733:
+    uuid: 5a6ff0d5-db45-4039-81a1-8b85786a3733
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: '16_9'

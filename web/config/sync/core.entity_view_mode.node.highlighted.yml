@@ -1,0 +1,10 @@
+uuid: 57177aa2-c6b4-47d1-ba4c-416f173e316c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.highlighted
+label: Uitgelicht
+targetEntityType: node
+cache: true

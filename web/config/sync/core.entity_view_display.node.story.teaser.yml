@@ -1,0 +1,79 @@
+uuid: 735cce5a-2dcc-44d9-8ae1-ed15228415c0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.story.field_body
+    - field.field.node.story.field_doelgroep
+    - field.field.node.story.field_from
+    - field.field.node.story.field_header_image
+    - field.field.node.story.field_intro
+    - field.field.node.story.field_reading_time
+    - image.style.hd
+    - node.type.story
+  module:
+    - ds
+    - image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_header_image
+        - field_doelgroep
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h3
+          class: ''
+id: node.story.teaser
+targetEntityType: node
+bundle: story
+mode: teaser
+content:
+  field_doelgroep:
+    type: entity_reference_label
+    weight: 1
+    region: ds_content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_header_image:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: hd
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  field_body: true
+  field_from: true
+  field_intro: true
+  field_reading_time: true
+  langcode: true
+  links: true

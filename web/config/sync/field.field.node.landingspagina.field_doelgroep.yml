@@ -1,0 +1,29 @@
+uuid: d0ba010c-b43c-4c24-aff3-1508c494fe07
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doelgroep
+    - node.type.landingspagina
+    - taxonomy.vocabulary.doelgroep
+id: node.landingspagina.field_doelgroep
+field_name: field_doelgroep
+entity_type: node
+bundle: landingspagina
+label: Doelgroep
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      doelgroep: doelgroep
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

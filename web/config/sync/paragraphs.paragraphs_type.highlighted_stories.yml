@@ -1,0 +1,10 @@
+uuid: 41ec0ad8-ced8-4e4e-9dbb-d1eea404cbe3
+langcode: nl
+status: true
+dependencies: {  }
+id: highlighted_stories
+label: 'Uitgelicht verhaal'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,25 @@
+uuid: 12347d30-5281-4ae1-8f44-ad7b87dee672
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlighted_stories.field_story
+    - paragraphs.paragraphs_type.highlighted_stories
+id: paragraph.highlighted_stories.default
+targetEntityType: paragraph
+bundle: highlighted_stories
+mode: default
+content:
+  field_story:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

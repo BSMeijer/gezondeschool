@@ -1,0 +1,124 @@
+uuid: 26e3fdac-2dd9-49b5-b89c-ef45aab4cb4c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.list
+    - field.field.node.news.field_body
+    - field.field.node.news.field_doelgroep
+    - field.field.node.news.field_header_image
+    - field.field.node.news.field_intro
+    - node.type.news
+  module:
+    - ds
+    - field_group
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_left
+        - group_right
+        - field_header_image
+        - field_doelgroep
+        - node_title
+        - field_intro
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 4
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h2
+          class: ''
+  field_group:
+    group_left:
+      children:
+        - field_header_image
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: group-left
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Left
+    group_right:
+      children:
+        - field_doelgroep
+        - node_title
+        - field_intro
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: ds_content
+      format_settings:
+        id: ''
+        classes: group-right
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: Right
+id: node.news.list
+targetEntityType: node
+bundle: news
+mode: list
+content:
+  field_doelgroep:
+    weight: 3
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: ds_content
+  field_header_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+  field_intro:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: ds_content
+hidden:
+  field_body: true
+  langcode: true
+  links: true

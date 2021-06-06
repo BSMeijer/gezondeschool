@@ -1,0 +1,29 @@
+uuid: 51056237-61f8-4e5e-b293-7e474d60f283
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_doelgroep
+    - node.type.news
+    - taxonomy.vocabulary.doelgroep
+id: node.news.field_doelgroep
+field_name: field_doelgroep
+entity_type: node
+bundle: news
+label: Doelgroep
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      doelgroep: doelgroep
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,22 @@
+uuid: 5521c120-3ebd-4db4-a4a7-95e0f9f32d17
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.highlighted_stories.field_story
+    - paragraphs.paragraphs_type.highlighted_stories
+id: paragraph.highlighted_stories.default
+targetEntityType: paragraph
+bundle: highlighted_stories
+mode: default
+content:
+  field_story:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: highlighted
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }
