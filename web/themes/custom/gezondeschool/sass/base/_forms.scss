@@ -3,3 +3,7 @@ input[type=password] {
   max-width: 100%;
   padding: $spacing / 2
 }
+
+.ajax-progress {
+  display: none;
+}

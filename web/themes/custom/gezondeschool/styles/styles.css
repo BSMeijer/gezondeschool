@@ -189,6 +189,11 @@ input[type=password] {
   padding: 0.5rem;
 }
 
+/* line 7, ../sass/base/_forms.scss */
+.ajax-progress {
+  display: none;
+}
+
 /* line 1, ../sass/layout/_layout.scss */
 .region-content,
 .region-footer {
